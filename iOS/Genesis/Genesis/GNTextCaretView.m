@@ -42,7 +42,7 @@
     animation = [CABasicAnimation animationWithKeyPath:@"hidden"];
     [animation setFromValue:[NSNumber numberWithFloat:1.0]];
     [animation setToValue:[NSNumber numberWithFloat:0.0]];
-    [animation setDuration:1.1];
+	[animation setDuration:1.118];
     [animation setAutoreverses:NO];
     [animation setRepeatCount:CGFLOAT_MAX];
     
@@ -89,7 +89,7 @@
 {
     CGRect frame = nonOffsetFrame;
     CGRect newFrame = CGRectMake(frame.origin.x - contentOffset.x-1,
-                                 frame.origin.y - contentOffset.y,
+                                 frame.origin.y - contentOffset.y+2,
                                  frame.size.width,
                                  frame.size.height);
     [super setFrame:newFrame];

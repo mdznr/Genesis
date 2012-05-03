@@ -19,7 +19,7 @@
 
 +(CGFloat)lineHeight
 {
-    return [GNTextGeometry heightOfCharacter] * 1.25;
+    return [GNTextGeometry heightOfCharacter] * 1.125;
 }
 
 +(CGFloat)fontSize
