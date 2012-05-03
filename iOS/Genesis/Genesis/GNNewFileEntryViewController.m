@@ -115,6 +115,11 @@
 
 #pragma mark - View lifecycle
 
+-(void)viewDidLoad
+{
+	[fileEntityName becomeFirstResponder];
+}
+
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return YES;
