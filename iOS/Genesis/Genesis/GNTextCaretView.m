@@ -39,11 +39,11 @@
 {
     [self setBackgroundColor:kGNAlternateTintColor];
     
-    animation = [CABasicAnimation animationWithKeyPath:@"hidden"];
+    animation = [CABasicAnimation animationWithKeyPath:@"opacity"];
     [animation setFromValue:[NSNumber numberWithFloat:1.0]];
     [animation setToValue:[NSNumber numberWithFloat:0.0]];
-	[animation setDuration:1.118];
-    [animation setAutoreverses:NO];
+	[animation setDuration:.559];
+    [animation setAutoreverses:YES];
     [animation setRepeatCount:CGFLOAT_MAX];
     
     [[self layer] addAnimation:animation forKey:@"blinkAnimation"];
@@ -89,7 +89,7 @@
 {
     CGRect frame = nonOffsetFrame;
     CGRect newFrame = CGRectMake(frame.origin.x - contentOffset.x-1,
-                                 frame.origin.y - contentOffset.y+2,
+                                 frame.origin.y - contentOffset.y+1,
                                  frame.size.width,
                                  frame.size.height);
     [super setFrame:newFrame];
