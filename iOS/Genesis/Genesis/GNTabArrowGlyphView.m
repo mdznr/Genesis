@@ -16,6 +16,7 @@
 #import "GNTabArrowGlyphView.h"
 #import "GNTextInputAccessoryView.h"
 #import "GNTextInputAccessoryViewButton.h"
+#import "GNTextInputAccessoryViewGeometry.h"
 
 @implementation GNTabArrowGlyphView
 
