@@ -1,5 +1,5 @@
 //
-//  TOUCHOverlayWindow.h
+//  TouchOverlayWindow.h
 //  HelloWorld
 //
 //  Created by Erica Sadun on 12/3/09.
@@ -8,5 +8,5 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TOUCHOverlayWindow : UIWindow
+@interface TouchOverlayWindow : UIWindow
 @end

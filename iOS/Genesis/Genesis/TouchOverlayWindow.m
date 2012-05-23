@@ -1,15 +1,15 @@
 //
-//  TOUCHOverlayWindow.m
+//  TouchOverlayWindow.m
 //  HelloWorld
 //
 //  Created by Erica Sadun on 12/3/09.
 //  Copyright 2009 Up To No Good, Inc.. All rights reserved.
 //
 
-#import "TOUCHOverlayWindow.h"
-#import "TOUCHkitView.h"
+#import "TouchOverlayWindow.h"
+#import "TouchKitView.h"
 
-@implementation TOUCHOverlayWindow
+@implementation TouchOverlayWindow
 - (void) sendEvent:(UIEvent *)event
 {
 	NSSet *touches = [event allTouches];
@@ -44,13 +44,13 @@
     
 	// call our methods to handle the touches
 	if (began)     
-        [[TOUCHkitView sharedInstance] touchesBegan:began withEvent:event];
+        [[TouchKitView sharedInstance] touchesBegan:began withEvent:event];
 	if (moved)     
-        [[TOUCHkitView sharedInstance] touchesMoved:moved withEvent:event];
+        [[TouchKitView sharedInstance] touchesMoved:moved withEvent:event];
 	if (ended)     
-        [[TOUCHkitView sharedInstance] touchesEnded:ended withEvent:event];
+        [[TouchKitView sharedInstance] touchesEnded:ended withEvent:event];
 	if (cancelled) 
-        [[TOUCHkitView sharedInstance] touchesCancelled:cancelled withEvent:event];
+        [[TouchKitView sharedInstance] touchesCancelled:cancelled withEvent:event];
     
     [super sendEvent: event];    
 }

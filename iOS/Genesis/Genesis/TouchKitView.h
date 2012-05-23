@@ -1,5 +1,5 @@
 //
-//  TOUCHkitView.h
+//  TouchKitView.h
 //  HelloWorld
 //
 //  Created by Erica Sadun on 12/3/09.
@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TOUCHkitView : UIView 
+@interface TouchKitView : UIView
 {
 	NSSet *touches;
 }
+
 @property (strong) UIColor *touchColor;
 
 + (id) sharedInstance;
+
 @end

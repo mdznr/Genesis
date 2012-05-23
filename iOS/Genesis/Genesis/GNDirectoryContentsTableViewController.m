@@ -35,6 +35,14 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+	// Changed selection colour?
+//	NSLog(@"selected");
+//	UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+//	UIView *v = [[UIView alloc] init];
+//	v.backgroundColor = [[UIColor alloc] initWithRed:113.0/255 green:1.0/255 blue:149.0/255 alpha:1.0];
+//	cell.selectedBackgroundView = v;
+	//
+	
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     NSString* relativePath = nil;
@@ -61,6 +69,7 @@
 
 -(UITableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath*)indexPath
 {
+	
     GNDirectoryContentsTableViewCell* tableViewCell;
     NSArray* relevantEntries = nil;
     if(indexPath.section == 0)

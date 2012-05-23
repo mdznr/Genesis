@@ -1,19 +1,19 @@
 //
-//  TOUCHkitView.m
+//  TouchKitView.m
 //  HelloWorld
 //
 //  Created by Erica Sadun on 12/3/09.
 //  Copyright 2009 Up To No Good, Inc.. All rights reserved.
 //
 
-#import "TOUCHkitView.h"
+#import "TouchKitView.h"
 
 UIImage *fingers;
 
-@implementation TOUCHkitView
+@implementation TouchKitView
 @synthesize touchColor;
 
-static TOUCHkitView *sharedInstance = nil;
+static TouchKitView *sharedInstance = nil;
 
 + (id) sharedInstance 
 {
@@ -43,7 +43,7 @@ static TOUCHkitView *sharedInstance = nil;
 		self.backgroundColor = [UIColor clearColor];
         self.userInteractionEnabled = NO;
         self.multipleTouchEnabled = YES;
-        touchColor = [[UIColor whiteColor] colorWithAlphaComponent:0.5f];
+        touchColor = [[UIColor whiteColor] colorWithAlphaComponent:0.55f];
 		touches = nil;
 	}
 	
@@ -81,7 +81,7 @@ static TOUCHkitView *sharedInstance = nil;
 	[[UIColor clearColor] set];
 	CGContextFillRect(context, self.bounds);
 	
-	float size = 25.0f; // based on 44.0f standard touch point
+	float size = 44.0f/2; // based on 44.0f standard touch point
 	
     for (UITouch *touch in touches)
     {
