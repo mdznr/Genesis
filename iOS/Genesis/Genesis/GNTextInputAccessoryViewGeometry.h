@@ -13,21 +13,22 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#import <UIKit/UIKit.h>
-#import <QuartzCore/QuartzCore.h>
-#define kGNTextCaretViewWidth 3.0
+#import <Foundation/Foundation.h>
 
-@interface GNTextCaretView : UIView
-{
-    CABasicAnimation* animation;
-    CGPoint contentOffset;
-    CGRect nonOffsetFrame;
-}
+// Accessory View
 
--(void)blink;
--(void)cleanUp;
+#define kGNTextInputAccessoryViewHeightiPhoneiPod 35
+#define kGNTextInputAccessoryViewHeightiPad 50
 
-@property(nonatomic) CGFloat horizontalOffset;
-@property(nonatomic) CGFloat verticalOffset;
+// Buttons
+
+#define kGNTextInputAccessoryViewButtonWidthiPhoneiPod 60.0
+#define kGNTextInputAccessoryViewButtonWidthiPad 80.0
+#define kGNTextInputAccessoryViewButtonMargin 3.0
+
+@interface GNTextInputAccessoryViewGeometry : NSObject
+
++(CGFloat)appropriateViewHeight;
++(CGFloat)appropriateStandardButtonWidth;
 
 @end
