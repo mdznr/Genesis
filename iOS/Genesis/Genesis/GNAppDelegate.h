@@ -13,6 +13,16 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
+#define USES_TouchKit	1
+
+#if USES_TouchKit
+#import "TouchKitView.h"
+#import "TouchOverlayWindow.h"
+#define WINDOW_CLASS TouchOverlayWindow
+#else
+#define WINDOW_CLASS UIWindow
+#endif
+
 #import <UIKit/UIKit.h>
 #import "GNNetworkManager.h"
 #import "GNTheme.h"
@@ -25,7 +35,7 @@
     GNTheme* theme;
     GNProjectBrowserViewController* projectBrowser;
 }
-@property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) WINDOW_CLASS *window;
 @property (nonatomic, strong) GNNetworkManager *networkManager;
 
 @property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;

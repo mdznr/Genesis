@@ -179,6 +179,8 @@
 		4FFDA04514CCF2E300422FF5 /* GNNewProjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FFDA04314CCF2E300422FF5 /* GNNewProjectViewController.xib */; };
 		4FFF7D5E151A106E00C986A1 /* GNTextInputManagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FFF7D5D151A106E00C986A1 /* GNTextInputManagerView.m */; };
 		4FFF7D63151A2D1600C986A1 /* GNTextGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FFF7D62151A2D1600C986A1 /* GNTextGeometry.m */; };
+		C9E78184156C8A8F00EABD84 /* TouchKitView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E78181156C8A8F00EABD84 /* TouchKitView.m */; };
+		C9E78185156C8A8F00EABD84 /* TouchOverlayWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E78182156C8A8F00EABD84 /* TouchOverlayWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -312,7 +314,7 @@
 		1FE09E3114F4823D004D6B2B /* GNNetworkConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNNetworkConstants.h; sourceTree = "<group>"; };
 		1FE48D22154A0E9400CCD875 /* GNNetworkSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNNetworkSync.h; sourceTree = "<group>"; };
 		1FE48D23154A0E9400CCD875 /* GNNetworkSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNNetworkSync.m; sourceTree = "<group>"; };
-		1FE48D25154A117D00CCD875 /* GNNetworkNotificationKeys.h */ = {isa = PBXFileReference; path = GNNetworkNotificationKeys.h; sourceTree = "<group>"; };
+		1FE48D25154A117D00CCD875 /* GNNetworkNotificationKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GNNetworkNotificationKeys.h; sourceTree = "<group>"; };
 		1FEC6E5214F08258008E2277 /* GNNetworkMessageProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNNetworkMessageProtocol.h; sourceTree = "<group>"; };
 		1FEEBE9714EEC92200C6E099 /* GNMediatorClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNMediatorClient.h; sourceTree = "<group>"; };
 		1FEEBE9814EEC92200C6E099 /* GNMediatorClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNMediatorClient.m; sourceTree = "<group>"; };
@@ -534,6 +536,10 @@
 		4FFF7D5D151A106E00C986A1 /* GNTextInputManagerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNTextInputManagerView.m; sourceTree = "<group>"; };
 		4FFF7D61151A2D1600C986A1 /* GNTextGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNTextGeometry.h; sourceTree = "<group>"; };
 		4FFF7D62151A2D1600C986A1 /* GNTextGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNTextGeometry.m; sourceTree = "<group>"; };
+		C9E78180156C8A8F00EABD84 /* TouchOverlayWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchOverlayWindow.h; sourceTree = "<group>"; };
+		C9E78181156C8A8F00EABD84 /* TouchKitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchKitView.m; sourceTree = "<group>"; };
+		C9E78182156C8A8F00EABD84 /* TouchOverlayWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchOverlayWindow.m; sourceTree = "<group>"; };
+		C9E78183156C8A8F00EABD84 /* TouchKitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchKitView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -797,6 +803,7 @@
 				1FEEBE9514EEC8F800C6E099 /* API */,
 				4F293B8C14CCE88100020A09 /* GNAppDelegate.h */,
 				4F293B8D14CCE88100020A09 /* GNAppDelegate.m */,
+				C9E78187156C8A9500EABD84 /* TouchKit */,
 				4F293B8F14CCE88100020A09 /* Genesis.xcdatamodeld */,
 				4F73FA7014CF294000976824 /* Model */,
 				4F293B8414CCE88100020A09 /* Supporting Files */,
@@ -1242,6 +1249,17 @@
 			name = Input;
 			sourceTree = "<group>";
 		};
+		C9E78187156C8A9500EABD84 /* TouchKit */ = {
+			isa = PBXGroup;
+			children = (
+				C9E78183156C8A8F00EABD84 /* TouchKitView.h */,
+				C9E78181156C8A8F00EABD84 /* TouchKitView.m */,
+				C9E78180156C8A8F00EABD84 /* TouchOverlayWindow.h */,
+				C9E78182156C8A8F00EABD84 /* TouchOverlayWindow.m */,
+			);
+			name = TouchKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1380,6 +1398,8 @@
 				4F544F3D154489AE00035A30 /* GNAttributedTextLabel.m in Sources */,
 				1FEFCFA11549461A00304265 /* GNNetworkManager.m in Sources */,
 				1FE48D24154A0E9400CCD875 /* GNNetworkSync.m in Sources */,
+				C9E78184156C8A8F00EABD84 /* TouchKitView.m in Sources */,
+				C9E78185156C8A8F00EABD84 /* TouchOverlayWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
