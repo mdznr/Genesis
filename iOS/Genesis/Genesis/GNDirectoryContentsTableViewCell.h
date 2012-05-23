@@ -13,6 +13,7 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
+#import "GNTableViewCell.h"
 #import <UIKit/UIKit.h>
 
 typedef enum
@@ -21,7 +22,7 @@ typedef enum
     kGNDirectoryContentsTableViewCellTypeFile = 1
 } kGNDirectoryContentsTableViewCellType;
 
-@interface GNDirectoryContentsTableViewCell : UITableViewCell
+@interface GNDirectoryContentsTableViewCell : GNTableViewCell
 
 -(id)initWithType:(kGNDirectoryContentsTableViewCellType)type;
 

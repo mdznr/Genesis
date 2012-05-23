@@ -17,6 +17,7 @@
 #import "GNProjectBrowserTableViewController.h"
 #import "GNAppDelegate.h"
 #import "GNFileManager.h"
+#import "GNTableViewCell.h"
 
 @implementation GNProjectBrowserTableViewController
 
@@ -63,10 +64,10 @@
     return fetchResults;
 }
 
--(UITableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath*)indexPath
+-(GNTableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath*)indexPath
 {
     // Create a table view cell for this project
-    UITableViewCell* cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+    GNTableViewCell* cell = [[GNTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
                                                    reuseIdentifier:@"kGNProjectTableViewCell"];
     
     NSString* projectName = [[[self allProjects] objectAtIndex:indexPath.row] valueForKey:@"name"];

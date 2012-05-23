@@ -13,7 +13,7 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#define USES_TouchKit	1
+#define USES_TouchKit	0
 
 #if USES_TouchKit
 #import "TouchKitView.h"
