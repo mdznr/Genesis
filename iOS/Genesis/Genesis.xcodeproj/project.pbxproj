@@ -179,6 +179,7 @@
 		4FFDA04514CCF2E300422FF5 /* GNNewProjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FFDA04314CCF2E300422FF5 /* GNNewProjectViewController.xib */; };
 		4FFF7D5E151A106E00C986A1 /* GNTextInputManagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FFF7D5D151A106E00C986A1 /* GNTextInputManagerView.m */; };
 		4FFF7D63151A2D1600C986A1 /* GNTextGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FFF7D62151A2D1600C986A1 /* GNTextGeometry.m */; };
+		C9CA1602156CA4E00067362C /* GNTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CA1601156CA4E00067362C /* GNTableViewCell.m */; };
 		C9E78184156C8A8F00EABD84 /* TouchKitView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E78181156C8A8F00EABD84 /* TouchKitView.m */; };
 		C9E78185156C8A8F00EABD84 /* TouchOverlayWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E78182156C8A8F00EABD84 /* TouchOverlayWindow.m */; };
 /* End PBXBuildFile section */
@@ -536,6 +537,8 @@
 		4FFF7D5D151A106E00C986A1 /* GNTextInputManagerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNTextInputManagerView.m; sourceTree = "<group>"; };
 		4FFF7D61151A2D1600C986A1 /* GNTextGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNTextGeometry.h; sourceTree = "<group>"; };
 		4FFF7D62151A2D1600C986A1 /* GNTextGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNTextGeometry.m; sourceTree = "<group>"; };
+		C9CA1600156CA4E00067362C /* GNTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNTableViewCell.h; sourceTree = "<group>"; };
+		C9CA1601156CA4E00067362C /* GNTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNTableViewCell.m; sourceTree = "<group>"; };
 		C9E78180156C8A8F00EABD84 /* TouchOverlayWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchOverlayWindow.h; sourceTree = "<group>"; };
 		C9E78181156C8A8F00EABD84 /* TouchKitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchKitView.m; sourceTree = "<group>"; };
 		C9E78182156C8A8F00EABD84 /* TouchOverlayWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchOverlayWindow.m; sourceTree = "<group>"; };
@@ -808,6 +811,7 @@
 				4F73FA7014CF294000976824 /* Model */,
 				4F293B8414CCE88100020A09 /* Supporting Files */,
 				4FFDA03D14CCEB3C00422FF5 /* Project Browser */,
+				C9CA1604156CA4E40067362C /* Purple Selection */,
 				4F3E372314CFA91000E91A1A /* Project Viewing */,
 				4F21143114DCEF18001EE6C9 /* Text Editing */,
 				4F3F046A150740AE00AA6E95 /* File Representation */,
@@ -1249,6 +1253,15 @@
 			name = Input;
 			sourceTree = "<group>";
 		};
+		C9CA1604156CA4E40067362C /* Purple Selection */ = {
+			isa = PBXGroup;
+			children = (
+				C9CA1600156CA4E00067362C /* GNTableViewCell.h */,
+				C9CA1601156CA4E00067362C /* GNTableViewCell.m */,
+			);
+			name = "Purple Selection";
+			sourceTree = "<group>";
+		};
 		C9E78187156C8A9500EABD84 /* TouchKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -1400,6 +1413,7 @@
 				1FE48D24154A0E9400CCD875 /* GNNetworkSync.m in Sources */,
 				C9E78184156C8A8F00EABD84 /* TouchKitView.m in Sources */,
 				C9E78185156C8A8F00EABD84 /* TouchOverlayWindow.m in Sources */,
+				C9CA1602156CA4E00067362C /* GNTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

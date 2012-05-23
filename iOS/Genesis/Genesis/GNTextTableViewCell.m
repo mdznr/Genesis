@@ -84,7 +84,7 @@
     [textContainerScrollView setFrame:CGRectMake(0,
                                                  0,
                                                  [self frame].size.width,
-                                                 [self frame].size.height)];
+                                                 [self frame].size.height+6)];
     [textContainerScrollView setContentSize:CGSizeMake([textContainerScrollView contentSize].width,
                                                        [self frame].size.height)];
     CGRect textLineViewFrame = [textLineView frame];
