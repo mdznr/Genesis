@@ -5,6 +5,7 @@
 build/*
 
 iOS/Genesis/DerivedData/*
+iOS/DerivedData/*
 
 *.pbxuser
 *.perspective
