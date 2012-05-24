@@ -2,9 +2,9 @@
 *.swp
 *~.nib
 
-build/
+build/*
 
-iOS/Genesis/DerivedData
+iOS/Genesis/DerivedData/*
 
 *.pbxuser
 *.perspective
