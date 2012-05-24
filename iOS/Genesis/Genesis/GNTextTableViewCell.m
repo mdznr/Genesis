@@ -84,7 +84,7 @@
     [textContainerScrollView setFrame:CGRectMake(0,
                                                  0,
                                                  [self frame].size.width,
-                                                 [self frame].size.height+6)];
+                                                 [self frame].size.height+6)]; // +6 makes scrollbar below line. Would this vary depending on different font sizes?
     [textContainerScrollView setContentSize:CGSizeMake([textContainerScrollView contentSize].width,
                                                        [self frame].size.height)];
     CGRect textLineViewFrame = [textLineView frame];
