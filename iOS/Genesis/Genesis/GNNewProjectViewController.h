@@ -28,6 +28,7 @@
     id<GNNewProjectViewControllerDelegate> delegate;
 }
 
+- (IBAction)segmentedControlChanged:(id)sender;
 -(IBAction)cancelPushed:(id)sender;
 
 @property(nonatomic,retain) id<GNNewProjectViewControllerDelegate> delegate;

@@ -76,6 +76,51 @@
     return YES;
 }
 
+- (IBAction)segmentedControlChanged:(id)sender
+{
+	// If the segmented control is at the first position, then we're in local mode
+    if( [(UISegmentedControl*)sender selectedSegmentIndex] == 0 )
+    {
+		projectNameField.placeholder = @"Project Name";
+		projectNameField.textAlignment = UITextAlignmentCenter;
+		
+		// Remove http:// or https:// prefix
+		if ( [projectNameField.text hasPrefix:@"http://"] ) {
+			projectNameField.text = [projectNameField.text substringFromIndex:7];
+			// maintain caret positioning
+		}
+		else if ( [projectNameField.text hasPrefix:@"https://"] ) {
+			projectNameField.text = [projectNameField.text substringFromIndex:8];
+			// maintain caret positioning by moving it back 8 spaces in the new string
+		}
+		
+		projectNameField.keyboardType = UIKeyboardTypeDefault;
+		[projectNameField resignFirstResponder];
+		[projectNameField becomeFirstResponder];
+		
+    }
+    // If it's at the second, we're in remote mode
+    else if( [(UISegmentedControl*)sender selectedSegmentIndex] == 1 )
+    {
+		projectNameField.placeholder = @"Repo URL";
+		projectNameField.textAlignment = UITextAlignmentLeft;
+		if ( ![projectNameField.text hasPrefix:@"http://"] && ![projectNameField.text hasPrefix:@"https://"] ) {
+			projectNameField.text = [@"http://" stringByAppendingString:projectNameField.text];
+		}
+		
+		projectNameField.keyboardType = UIKeyboardTypeURL;
+		[projectNameField resignFirstResponder];
+		[projectNameField becomeFirstResponder];
+		
+//		Note these methods when submitting:
+//		– stringByAddingPercentEscapesUsingEncoding:
+//		– stringByReplacingPercentEscapesUsingEncoding:
+//		These should handle spaces that may have come from prior to semgented control change or external keyboard, right?
+		
+    }
+	
+}
+
 -(IBAction)cancelPushed:(id)sender;
 {
     [[self presentingViewController] dismissModalViewControllerAnimated:YES];
