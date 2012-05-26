@@ -35,15 +35,19 @@
 -(IBAction)segmentedControlChanged:(id)sender
 {
     // If the segmented control is at the first position, then we're in file mode
-    if([(UISegmentedControl*)sender selectedSegmentIndex] == 0)
+    if( [(UISegmentedControl*)sender selectedSegmentIndex] == 0 )
     {
         [titleNavigationItem setTitle:@"New File"];
+		fileEntityName.placeholder = @"File Name";
     }
-    // If it's at the second, we're in folder mode
-    else if([(UISegmentedControl*)sender selectedSegmentIndex] == 1)
+    // If it's at the second, we're in directory mode
+    else if( [(UISegmentedControl*)sender selectedSegmentIndex] == 1 )
     {
-        [titleNavigationItem setTitle:@"New Folder"];
+        [titleNavigationItem setTitle:@"New Directory"];
+		fileEntityName.placeholder = @"Directory Name";
     }
+//	Maybe will help with caret positioning on UITextField placeholder change?:
+//	[fileEntityName becomeFirstResponder];
 }
 
 -(IBAction)cancelPushed:(id)sender
