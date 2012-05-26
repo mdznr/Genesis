@@ -179,6 +179,12 @@
 		4FFDA04514CCF2E300422FF5 /* GNNewProjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4FFDA04314CCF2E300422FF5 /* GNNewProjectViewController.xib */; };
 		4FFF7D5E151A106E00C986A1 /* GNTextInputManagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FFF7D5D151A106E00C986A1 /* GNTextInputManagerView.m */; };
 		4FFF7D63151A2D1600C986A1 /* GNTextGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FFF7D62151A2D1600C986A1 /* GNTextGeometry.m */; };
+		C91E78A71570D64E00567AFA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C91E78A61570D64E00567AFA /* Default.png */; };
+		C91E78AA1570D65200567AFA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C91E78A91570D65200567AFA /* Default@2x.png */; };
+		C91E78AC1570D65800567AFA /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C91E78AB1570D65800567AFA /* Default-Portrait~ipad.png */; };
+		C91E78AE1570D65B00567AFA /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C91E78AD1570D65B00567AFA /* Default-Portrait@2x~ipad.png */; };
+		C91E78B01570D66600567AFA /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C91E78AF1570D66600567AFA /* Default-Landscape~ipad.png */; };
+		C91E78B21570D66900567AFA /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C91E78B11570D66900567AFA /* Default-Landscape@2x~ipad.png */; };
 		C9CA1602156CA4E00067362C /* GNTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CA1601156CA4E00067362C /* GNTableViewCell.m */; };
 		C9CA160F156D62750067362C /* GNTextInputAccessoryViewGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CA160E156D62750067362C /* GNTextInputAccessoryViewGeometry.m */; };
 		C9E78184156C8A8F00EABD84 /* TouchKitView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E78181156C8A8F00EABD84 /* TouchKitView.m */; };
@@ -538,6 +544,12 @@
 		4FFF7D5D151A106E00C986A1 /* GNTextInputManagerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNTextInputManagerView.m; sourceTree = "<group>"; };
 		4FFF7D61151A2D1600C986A1 /* GNTextGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNTextGeometry.h; sourceTree = "<group>"; };
 		4FFF7D62151A2D1600C986A1 /* GNTextGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNTextGeometry.m; sourceTree = "<group>"; };
+		C91E78A61570D64E00567AFA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		C91E78A91570D65200567AFA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		C91E78AB1570D65800567AFA /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		C91E78AD1570D65B00567AFA /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		C91E78AF1570D66600567AFA /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		C91E78B11570D66900567AFA /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
 		C9CA1600156CA4E00067362C /* GNTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNTableViewCell.h; sourceTree = "<group>"; };
 		C9CA1601156CA4E00067362C /* GNTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNTableViewCell.m; sourceTree = "<group>"; };
 		C9CA160D156D62750067362C /* GNTextInputAccessoryViewGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNTextInputAccessoryViewGeometry.h; sourceTree = "<group>"; };
@@ -841,6 +853,7 @@
 				4F06011B1533D2740022187D /* themes */,
 				4FA4FF391533AF160054482A /* languages */,
 				4FB4E6E714F73C8D00436618 /* Icons */,
+				C91E78B31570D8EC00567AFA /* Launch Images */,
 				4F72EA0815445A1B008A27C7 /* DefaultSettings.plist */,
 			);
 			name = "Supporting Files";
@@ -1258,6 +1271,20 @@
 			name = Input;
 			sourceTree = "<group>";
 		};
+		C91E78B31570D8EC00567AFA /* Launch Images */ = {
+			isa = PBXGroup;
+			children = (
+				C91E78B11570D66900567AFA /* Default-Landscape@2x~ipad.png */,
+				C91E78AF1570D66600567AFA /* Default-Landscape~ipad.png */,
+				C91E78AD1570D65B00567AFA /* Default-Portrait@2x~ipad.png */,
+				C91E78AB1570D65800567AFA /* Default-Portrait~ipad.png */,
+				C91E78A91570D65200567AFA /* Default@2x.png */,
+				C91E78A61570D64E00567AFA /* Default.png */,
+			);
+			name = "Launch Images";
+			path = ..;
+			sourceTree = "<group>";
+		};
 		C9CA1604156CA4E40067362C /* Purple Selection */ = {
 			isa = PBXGroup;
 			children = (
@@ -1347,6 +1374,12 @@
 				4FB2676A1540F2310086B994 /* HideKeyboardButton.png in Resources */,
 				4F72EA0915445A1B008A27C7 /* DefaultSettings.plist in Resources */,
 				4F27873015447E8600B8E752 /* GNSettingsViewController.xib in Resources */,
+				C91E78A71570D64E00567AFA /* Default.png in Resources */,
+				C91E78AA1570D65200567AFA /* Default@2x.png in Resources */,
+				C91E78AC1570D65800567AFA /* Default-Portrait~ipad.png in Resources */,
+				C91E78AE1570D65B00567AFA /* Default-Portrait@2x~ipad.png in Resources */,
+				C91E78B01570D66600567AFA /* Default-Landscape~ipad.png in Resources */,
+				C91E78B21570D66900567AFA /* Default-Landscape@2x~ipad.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

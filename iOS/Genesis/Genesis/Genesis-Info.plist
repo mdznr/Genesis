@@ -13,6 +13,15 @@
 		<string>Genesis_57.png</string>
 		<string>Genesis_114.png</string>
 		<string>Genesis_72.png</string>
+		<string>Default.png</string>
+		<string>Default@2x.png</string>
+		<string>Default-Portrait~ipad.png</string>
+		<string>Default-Portrait@2x~ipad.png</string>
+		<string>Default-Landscape~ipad.png</string>
+		<string>Default-Landscape@2x~ipad.png</string>
+		<string>Default-Landscape@2x~ipad.png</string>
+		<string>Default-Landscape~ipad.png</string>
+		<string>Default-Portrait~ipad.png</string>
 	</array>
 	<key>CFBundleIcons</key>
 	<dict>
@@ -23,6 +32,15 @@
 				<string>Genesis_57.png</string>
 				<string>Genesis_114.png</string>
 				<string>Genesis_72.png</string>
+				<string>Default.png</string>
+				<string>Default@2x.png</string>
+				<string>Default-Portrait~ipad.png</string>
+				<string>Default-Portrait@2x~ipad.png</string>
+				<string>Default-Landscape~ipad.png</string>
+				<string>Default-Landscape@2x~ipad.png</string>
+				<string>Default-Landscape@2x~ipad.png</string>
+				<string>Default-Landscape~ipad.png</string>
+				<string>Default-Portrait~ipad.png</string>
 			</array>
 		</dict>
 	</dict>
@@ -42,12 +60,12 @@
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>UIFileSharingEnabled</key>
-	<true/>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Inconsolata.otf</string>
 	</array>
+	<key>UIFileSharingEnabled</key>
+	<true/>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
