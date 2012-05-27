@@ -143,6 +143,14 @@
     
     [tableViewController setTableView:tableView];
     [tableView reloadData];
+	
+	// This should probably be somewhere else:
+	// Check if tableView is empty, and disable edit button
+	if ( [tableView numberOfRowsInSection:0] == 0 ) {
+		editButtonItem.enabled = NO;
+	} else {
+		editButtonItem.enabled = YES;
+	}
 }
 
 -(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
