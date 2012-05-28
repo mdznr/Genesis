@@ -26,7 +26,7 @@
     self = [super initWithStyle:UITableViewStyleGrouped];
     if(self)
     {
-        
+		
     }
     return self;
 }
@@ -38,7 +38,7 @@
     UIBarButtonItem* done = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
                                                                           target:self
                                                                           action:@selector(donePushed:)];
-    
+	self.navigationItem.title = @"Settings";
     [[self navigationItem] setRightBarButtonItem:done];
 }
 
