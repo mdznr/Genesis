@@ -92,6 +92,7 @@
     
     NSUInteger indexOfProjectName = [allProjectNames indexOfObject:name];
     NSIndexPath* indexPathForProject = [NSIndexPath indexPathForRow:indexOfProjectName inSection:0];
+	
     
     // Select this project in the tableview
     [tableView selectRowAtIndexPath:indexPathForProject
@@ -146,11 +147,39 @@
 	
 	// This should probably be somewhere else:
 	// Check if tableView is empty, and disable edit button
+	// Display no projects note
+	/*
 	if ( [tableView numberOfRowsInSection:0] == 0 ) {
 		editButtonItem.enabled = NO;
+		
+		UIView* backgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 416)];
+		backgroundView.autoresizingMask = UIViewAutoresizingFlexibleHeight |
+											UIViewAutoresizingFlexibleWidth;
+		NSString* imagePath = [[NSBundle mainBundle] pathForResource:@"LinenPattern"
+																ofType:@"jpg"
+							   									inDirectory:@"/"];
+		backgroundView.backgroundColor = [UIColor colorWithPatternImage:[[UIImage alloc] initWithContentsOfFile:imagePath]];
+		
+		UILabel* message = [[UILabel alloc] initWithFrame:CGRectMake(20, 150, 280, 56)];
+		message.autoresizingMask = UIViewAutoresizingFlexibleWidth |
+									UIViewAutoresizingFlexibleLeftMargin |
+									UIViewAutoresizingFlexibleRightMargin;
+		message.text = @"You don't have any projects, yet.";
+		message.textAlignment = UITextAlignmentCenter;
+		message.textColor = [UIColor lightGrayColor];
+		message.font = [UIFont systemFontOfSize:24.0f];
+		message.lineBreakMode = UILineBreakModeWordWrap;
+		message.numberOfLines = 2;
+		message.shadowColor = [UIColor whiteColor];
+		message.shadowOffset = CGSizeMake(0, 1);
+		message.backgroundColor = [UIColor clearColor];
+		[backgroundView addSubview:message];
+		
+		[[super view] addSubview:backgroundView];
 	} else {
 		editButtonItem.enabled = YES;
 	}
+	 */
 }
 
 -(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

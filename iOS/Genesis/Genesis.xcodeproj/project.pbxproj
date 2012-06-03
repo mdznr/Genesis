@@ -187,6 +187,8 @@
 		C91E78B21570D66900567AFA /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C91E78B11570D66900567AFA /* Default-Landscape@2x~ipad.png */; };
 		C9CA1602156CA4E00067362C /* GNTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CA1601156CA4E00067362C /* GNTableViewCell.m */; };
 		C9CA160F156D62750067362C /* GNTextInputAccessoryViewGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CA160E156D62750067362C /* GNTextInputAccessoryViewGeometry.m */; };
+		C9D456F2157AC1A200C50BBC /* LinenPattern.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9D456F1157AC1A200C50BBC /* LinenPattern.jpg */; };
+		C9D456F4157B121E00C50BBC /* LinenPattern@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9D456F3157B121E00C50BBC /* LinenPattern@2x.jpg */; };
 		C9E78184156C8A8F00EABD84 /* TouchKitView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E78181156C8A8F00EABD84 /* TouchKitView.m */; };
 		C9E78185156C8A8F00EABD84 /* TouchOverlayWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E78182156C8A8F00EABD84 /* TouchOverlayWindow.m */; };
 /* End PBXBuildFile section */
@@ -554,6 +556,8 @@
 		C9CA1601156CA4E00067362C /* GNTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNTableViewCell.m; sourceTree = "<group>"; };
 		C9CA160D156D62750067362C /* GNTextInputAccessoryViewGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNTextInputAccessoryViewGeometry.h; sourceTree = "<group>"; };
 		C9CA160E156D62750067362C /* GNTextInputAccessoryViewGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNTextInputAccessoryViewGeometry.m; sourceTree = "<group>"; };
+		C9D456F1157AC1A200C50BBC /* LinenPattern.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LinenPattern.jpg; sourceTree = "<group>"; };
+		C9D456F3157B121E00C50BBC /* LinenPattern@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "LinenPattern@2x.jpg"; sourceTree = "<group>"; };
 		C9E78180156C8A8F00EABD84 /* TouchOverlayWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchOverlayWindow.h; sourceTree = "<group>"; };
 		C9E78181156C8A8F00EABD84 /* TouchKitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchKitView.m; sourceTree = "<group>"; };
 		C9E78182156C8A8F00EABD84 /* TouchOverlayWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchOverlayWindow.m; sourceTree = "<group>"; };
@@ -1163,6 +1167,8 @@
 		4FB267681540EFD30086B994 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				C9D456F1157AC1A200C50BBC /* LinenPattern.jpg */,
+				C9D456F3157B121E00C50BBC /* LinenPattern@2x.jpg */,
 				4FB267691540F2310086B994 /* HideKeyboardButton.png */,
 			);
 			name = Images;
@@ -1380,6 +1386,8 @@
 				C91E78AE1570D65B00567AFA /* Default-Portrait@2x~ipad.png in Resources */,
 				C91E78B01570D66600567AFA /* Default-Landscape~ipad.png in Resources */,
 				C91E78B21570D66900567AFA /* Default-Landscape@2x~ipad.png in Resources */,
+				C9D456F2157AC1A200C50BBC /* LinenPattern.jpg in Resources */,
+				C9D456F4157B121E00C50BBC /* LinenPattern@2x.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
