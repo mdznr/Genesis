@@ -34,11 +34,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    UIBarButtonItem* done = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
-                                                                          target:self
-                                                                          action:@selector(donePushed:)];
+	
 	self.navigationItem.title = @"Settings";
+	
+	UIBarButtonItem* done = [[UIBarButtonItem alloc] initWithTitle:@"Done"
+														style:UIBarButtonItemStyleBordered
+														target:self
+														action:@selector(donePushed:)];
+	done.tintColor = kGNTintColor;
     [[self navigationItem] setRightBarButtonItem:done];
 }
 
