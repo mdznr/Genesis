@@ -95,6 +95,8 @@
 		}
 		
 		projectNameField.keyboardType = UIKeyboardTypeDefault;
+		projectNameField.autocapitalizationType = UITextAutocapitalizationTypeWords;
+		projectNameField.autocorrectionType = UITextAutocorrectionTypeYes;
 		[projectNameField resignFirstResponder];
 		[projectNameField becomeFirstResponder];
 		
@@ -109,6 +111,8 @@
 		}
 		
 		projectNameField.keyboardType = UIKeyboardTypeURL;
+		projectNameField.autocorrectionType = UITextAutocorrectionTypeNo;
+		projectNameField.autocapitalizationType = UITextAutocapitalizationTypeNone;
 		[projectNameField resignFirstResponder];
 		[projectNameField becomeFirstResponder];
 		
