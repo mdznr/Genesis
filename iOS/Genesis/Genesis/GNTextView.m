@@ -47,7 +47,9 @@
                                                                       [self frame].origin.y,
                                                                       [self frame].size.width - kGNLineNumberTableViewWidth,
                                                                       [self frame].size.height)];
-    
+    // Disable scrolling to top
+	textTableView.scrollsToTop = YES;
+	
     // Set up its data source
     textTableViewDataSource = [[GNTextTableViewDataSource alloc] initWithFileRepresentation:fileRepresentation];
     [textTableView setDataSource:textTableViewDataSource];

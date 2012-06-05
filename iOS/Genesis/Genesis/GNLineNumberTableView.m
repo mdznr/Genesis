@@ -30,6 +30,9 @@
                           style:UITableViewStylePlain];
     if(self)
     {
+		// Disable scrolling to top
+		self.scrollsToTop = NO;
+		
         // Set the file representation
         fileRepresentation = representation;
         

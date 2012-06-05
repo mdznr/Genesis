@@ -23,6 +23,9 @@
     self = [super initWithFrame:frame];
     if(self)
     {
+		// Disable scrolling to top
+		self.scrollsToTop = NO;
+		
         // Set the separator style
         [self setSeparatorStyle:UITableViewCellSeparatorStyleNone];
         

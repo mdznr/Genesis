@@ -28,6 +28,10 @@
     {
         textContainerScrollView = [[UIScrollView alloc] initWithFrame:[self frame]];
         [textContainerScrollView setContentSize:[self frame].size];
+		
+		// Disable scrolling to top
+		textContainerScrollView.scrollsToTop = NO;
+		
         [self addSubview:textContainerScrollView];
         
         [textContainerScrollView setDelegate:self];
