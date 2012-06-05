@@ -161,9 +161,6 @@
 		4FB267571540A4690086B994 /* GNHorizontalOffsetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB267561540A4690086B994 /* GNHorizontalOffsetManager.m */; };
 		4FB2675B1540AC550086B994 /* GNAttributedFileText.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FB2675A1540AC550086B994 /* GNAttributedFileText.m */; };
 		4FB2676A1540F2310086B994 /* HideKeyboardButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB267691540F2310086B994 /* HideKeyboardButton.png */; };
-		4FB4E6F114F73D8100436618 /* Genesis_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB4E6F014F73D8100436618 /* Genesis_57.png */; };
-		4FB4E6F314F73D8700436618 /* Genesis_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB4E6F214F73D8700436618 /* Genesis_114.png */; };
-		4FB4E6F714F73DF400436618 /* Genesis_72.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FB4E6F614F73DF400436618 /* Genesis_72.png */; };
 		4FBD8B8515324BD9006D510E /* GNTextLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FBD8B8415324BD9006D510E /* GNTextLineView.m */; };
 		4FD1C2DA153C889100DD4A3D /* GNTextInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD1C2D9153C889100DD4A3D /* GNTextInputAccessoryView.m */; };
 		4FD1C2DF153C891300DD4A3D /* GNTextInputAccessoryViewButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FD1C2DE153C891300DD4A3D /* GNTextInputAccessoryViewButton.m */; };
@@ -189,8 +186,17 @@
 		C9CA160F156D62750067362C /* GNTextInputAccessoryViewGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = C9CA160E156D62750067362C /* GNTextInputAccessoryViewGeometry.m */; };
 		C9D456F2157AC1A200C50BBC /* LinenPattern.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9D456F1157AC1A200C50BBC /* LinenPattern.jpg */; };
 		C9D456F4157B121E00C50BBC /* LinenPattern@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C9D456F3157B121E00C50BBC /* LinenPattern@2x.jpg */; };
+		C9DA5619157DD131008A1226 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DA5618157DD131008A1226 /* Icon-72@2x.png */; };
+		C9DA561E157DD143008A1226 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DA561A157DD143008A1226 /* Icon-Small-50.png */; };
+		C9DA561F157DD143008A1226 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DA561B157DD143008A1226 /* Icon-Small-50@2x.png */; };
+		C9DA5620157DD143008A1226 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DA561C157DD143008A1226 /* Icon-Small.png */; };
+		C9DA5621157DD143008A1226 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DA561D157DD143008A1226 /* Icon-Small@2x.png */; };
+		C9DA5623157DD14B008A1226 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = C9DA5622157DD14B008A1226 /* iTunesArtwork.png */; };
 		C9E78184156C8A8F00EABD84 /* TouchKitView.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E78181156C8A8F00EABD84 /* TouchKitView.m */; };
 		C9E78185156C8A8F00EABD84 /* TouchOverlayWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = C9E78182156C8A8F00EABD84 /* TouchOverlayWindow.m */; };
+		C9F52B0A157DCF08008D412F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F52B09157DCF08008D412F /* Icon.png */; };
+		C9F52B0C157DCF0E008D412F /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F52B0B157DCF0E008D412F /* Icon@2x.png */; };
+		C9F52B0E157DCF57008D412F /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = C9F52B0D157DCF57008D412F /* Icon-72.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -516,9 +522,6 @@
 		4FB267591540AC540086B994 /* GNAttributedFileText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNAttributedFileText.h; sourceTree = "<group>"; };
 		4FB2675A1540AC550086B994 /* GNAttributedFileText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNAttributedFileText.m; sourceTree = "<group>"; };
 		4FB267691540F2310086B994 /* HideKeyboardButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HideKeyboardButton.png; sourceTree = "<group>"; };
-		4FB4E6F014F73D8100436618 /* Genesis_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Genesis_57.png; sourceTree = SOURCE_ROOT; };
-		4FB4E6F214F73D8700436618 /* Genesis_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Genesis_114.png; sourceTree = SOURCE_ROOT; };
-		4FB4E6F614F73DF400436618 /* Genesis_72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Genesis_72.png; sourceTree = SOURCE_ROOT; };
 		4FBD8B8315324BD9006D510E /* GNTextLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNTextLineView.h; sourceTree = "<group>"; };
 		4FBD8B8415324BD9006D510E /* GNTextLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNTextLineView.m; sourceTree = "<group>"; };
 		4FC9DE271542494D0084BB41 /* GNProjectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNProjectManager.h; sourceTree = "<group>"; };
@@ -558,10 +561,19 @@
 		C9CA160E156D62750067362C /* GNTextInputAccessoryViewGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNTextInputAccessoryViewGeometry.m; sourceTree = "<group>"; };
 		C9D456F1157AC1A200C50BBC /* LinenPattern.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LinenPattern.jpg; sourceTree = "<group>"; };
 		C9D456F3157B121E00C50BBC /* LinenPattern@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "LinenPattern@2x.jpg"; sourceTree = "<group>"; };
+		C9DA5618157DD131008A1226 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		C9DA561A157DD143008A1226 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		C9DA561B157DD143008A1226 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		C9DA561C157DD143008A1226 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		C9DA561D157DD143008A1226 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		C9DA5622157DD14B008A1226 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
 		C9E78180156C8A8F00EABD84 /* TouchOverlayWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchOverlayWindow.h; sourceTree = "<group>"; };
 		C9E78181156C8A8F00EABD84 /* TouchKitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchKitView.m; sourceTree = "<group>"; };
 		C9E78182156C8A8F00EABD84 /* TouchOverlayWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchOverlayWindow.m; sourceTree = "<group>"; };
 		C9E78183156C8A8F00EABD84 /* TouchKitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchKitView.h; sourceTree = "<group>"; };
+		C9F52B09157DCF08008D412F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
+		C9F52B0B157DCF0E008D412F /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
+		C9F52B0D157DCF57008D412F /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "../Icon-72.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1177,9 +1189,15 @@
 		4FB4E6E714F73C8D00436618 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				4FB4E6F014F73D8100436618 /* Genesis_57.png */,
-				4FB4E6F614F73DF400436618 /* Genesis_72.png */,
-				4FB4E6F214F73D8700436618 /* Genesis_114.png */,
+				C9F52B0D157DCF57008D412F /* Icon-72.png */,
+				C9DA5618157DD131008A1226 /* Icon-72@2x.png */,
+				C9DA561A157DD143008A1226 /* Icon-Small-50.png */,
+				C9DA561B157DD143008A1226 /* Icon-Small-50@2x.png */,
+				C9DA561C157DD143008A1226 /* Icon-Small.png */,
+				C9DA561D157DD143008A1226 /* Icon-Small@2x.png */,
+				C9F52B09157DCF08008D412F /* Icon.png */,
+				C9F52B0B157DCF0E008D412F /* Icon@2x.png */,
+				C9DA5622157DD14B008A1226 /* iTunesArtwork.png */,
 			);
 			name = Icons;
 			sourceTree = "<group>";
@@ -1369,9 +1387,6 @@
 				4F3E372114CFA90D00E91A1A /* GNDirectoryViewController.xib in Resources */,
 				4F0216E614D1F3850027DF89 /* GNNewFileEntryViewController.xib in Resources */,
 				4F21143B14DCF0C8001EE6C9 /* GNTextViewController~iphone.xib in Resources */,
-				4FB4E6F114F73D8100436618 /* Genesis_57.png in Resources */,
-				4FB4E6F314F73D8700436618 /* Genesis_114.png in Resources */,
-				4FB4E6F714F73DF400436618 /* Genesis_72.png in Resources */,
 				4FD614A61536573400D6E859 /* Entitlements.plist in Resources */,
 				4F1DDE781537B3F400A70529 /* GNTextViewController~iPad.xib in Resources */,
 				4FEC7B1A1537D34000AA861F /* Inconsolata.otf in Resources */,
@@ -1388,6 +1403,15 @@
 				C91E78B21570D66900567AFA /* Default-Landscape@2x~ipad.png in Resources */,
 				C9D456F2157AC1A200C50BBC /* LinenPattern.jpg in Resources */,
 				C9D456F4157B121E00C50BBC /* LinenPattern@2x.jpg in Resources */,
+				C9F52B0A157DCF08008D412F /* Icon.png in Resources */,
+				C9F52B0C157DCF0E008D412F /* Icon@2x.png in Resources */,
+				C9F52B0E157DCF57008D412F /* Icon-72.png in Resources */,
+				C9DA5619157DD131008A1226 /* Icon-72@2x.png in Resources */,
+				C9DA561E157DD143008A1226 /* Icon-Small-50.png in Resources */,
+				C9DA561F157DD143008A1226 /* Icon-Small-50@2x.png in Resources */,
+				C9DA5620157DD143008A1226 /* Icon-Small.png in Resources */,
+				C9DA5621157DD143008A1226 /* Icon-Small@2x.png in Resources */,
+				C9DA5623157DD14B008A1226 /* iTunesArtwork.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
