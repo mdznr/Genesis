@@ -38,6 +38,8 @@
                                               size:10]];
     [[cell textLabel] setTextAlignment:UITextAlignmentRight];
     
+	cell.textLabel.adjustsFontSizeToFitWidth = YES;
+	
     return cell;
 }
 
