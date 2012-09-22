@@ -32,6 +32,12 @@
     return self;
 }
 
+-(void)isEmpty
+{
+//	[noProjectsYet];
+//	[super.super noProjectsYet];
+}
+
 -(void)toggleEditing
 {
     [self setEditing:!self.editing animated:YES];
@@ -80,7 +86,13 @@
 -(NSInteger)tableView:(UITableView*)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of projects in the managed object context
-    return [[self allProjects] count];
+//	NSInteger count = [[self allProjects] count];
+//	if ( !count ) {
+//		[self isEmpty];
+//	}
+//    return count;
+	
+	return [[self allProjects] count];
 }
 
 -(void)tableView:(UITableView*)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath*)indexPath
@@ -99,7 +111,7 @@
         // Remove the project from the managed object context
         NSManagedObjectContext* managedObjectContext = [(GNAppDelegate*)[[UIApplication sharedApplication] delegate] managedObjectContext];
         [managedObjectContext deleteObject:project];
-                
+		
         // Reload data
         [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
     }

@@ -28,5 +28,6 @@
 -(IBAction)addProjectButtonPressed:(id)sender;
 -(IBAction)editButtonPressed:(id)sender;
 -(IBAction)settingsButtonPushed:(id)sender;
+-(void)noProjectsYet;
 
 @end

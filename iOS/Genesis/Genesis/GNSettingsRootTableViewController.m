@@ -42,6 +42,13 @@
 														target:self
 														action:@selector(donePushed:)];
 	done.tintColor = kGNTintColor;
+	
+	NSString* imagePath = [[NSBundle mainBundle] pathForResource:@"GridPattern"
+														  ofType:@"png"
+													 inDirectory:@"/"];
+	self.view.backgroundColor = [UIColor colorWithPatternImage:[[UIImage alloc] initWithContentsOfFile:imagePath]];
+	self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
+	
     [[self navigationItem] setRightBarButtonItem:done];
 }
 

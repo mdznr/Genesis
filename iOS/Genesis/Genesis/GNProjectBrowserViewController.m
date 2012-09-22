@@ -144,42 +144,6 @@
     
     [tableViewController setTableView:tableView];
     [tableView reloadData];
-	
-	// This should probably be somewhere else:
-	// Check if tableView is empty, and disable edit button
-	// Display no projects note
-	/*
-	if ( [tableView numberOfRowsInSection:0] == 0 ) {
-		editButtonItem.enabled = NO;
-		
-		UIView* backgroundView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 416)];
-		backgroundView.autoresizingMask = UIViewAutoresizingFlexibleHeight |
-											UIViewAutoresizingFlexibleWidth;
-		NSString* imagePath = [[NSBundle mainBundle] pathForResource:@"LinenPattern"
-																ofType:@"jpg"
-							   									inDirectory:@"/"];
-		backgroundView.backgroundColor = [UIColor colorWithPatternImage:[[UIImage alloc] initWithContentsOfFile:imagePath]];
-		
-		UILabel* message = [[UILabel alloc] initWithFrame:CGRectMake(20, 150, 280, 56)];
-		message.autoresizingMask = UIViewAutoresizingFlexibleWidth |
-									UIViewAutoresizingFlexibleLeftMargin |
-									UIViewAutoresizingFlexibleRightMargin;
-		message.text = @"You don't have any projects, yet.";
-		message.textAlignment = UITextAlignmentCenter;
-		message.textColor = [UIColor lightGrayColor];
-		message.font = [UIFont systemFontOfSize:24.0f];
-		message.lineBreakMode = UILineBreakModeWordWrap;
-		message.numberOfLines = 2;
-		message.shadowColor = [UIColor whiteColor];
-		message.shadowOffset = CGSizeMake(0, 1);
-		message.backgroundColor = [UIColor clearColor];
-		[backgroundView addSubview:message];
-		
-		[[super view] addSubview:backgroundView];
-	} else {
-		editButtonItem.enabled = YES;
-	}
-	 */
 }
 
 -(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -191,6 +155,61 @@
 -(void)refreshProjects:(NSNotification*)notification
 {
     [tableView reloadData];
+}
+
+-(void)noProjectsYet
+{
+	self.editButtonItem.enabled = NO;
+	
+	// backroundView
+	UIView* backgroundView = [[UIView alloc] initWithFrame:CGRectMake([super.view frame].origin.x,
+																	  [super.view frame].origin.y,
+																	  [super.view frame].size.width,
+																	  [super.view frame].size.height-44)];
+	
+	backgroundView.autoresizingMask = UIViewAutoresizingFlexibleHeight |
+									  UIViewAutoresizingFlexibleWidth;
+	
+	NSString* imagePath = [[NSBundle mainBundle] pathForResource:@"GridPattern"
+														  ofType:@"png"
+													 inDirectory:@"/"];
+	
+	backgroundView.backgroundColor = [UIColor colorWithPatternImage:[[UIImage alloc] initWithContentsOfFile:imagePath]];
+	backgroundView.clipsToBounds = YES;
+	
+	// emptyBraces
+	UIImage* emptyBracesImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"EmptyBraces"
+																								 ofType:@"png"]];
+	
+	UIImageView* emptyBracesImageView = [[UIImageView alloc] initWithImage:emptyBracesImage];
+	
+	[emptyBracesImageView setFrame:CGRectMake(105,
+											  72,
+											  109,
+											  97)];
+	
+	emptyBracesImageView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin |
+											UIViewAutoresizingFlexibleRightMargin;
+	
+	emptyBracesImageView.userInteractionEnabled = NO;
+	[backgroundView addSubview:emptyBracesImageView];
+	
+	// messageLabel
+	UILabel* messageLabel = [[UILabel alloc] initWithFrame:CGRectMake(50, 221, 220, 56)];
+	messageLabel.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin |
+	UIViewAutoresizingFlexibleRightMargin;
+	messageLabel.text = @"You don't have any projects, yet.";
+	messageLabel.textAlignment = UITextAlignmentCenter;
+	messageLabel.textColor = [UIColor lightGrayColor];
+	messageLabel.font = [UIFont systemFontOfSize:22.0f];
+	messageLabel.lineBreakMode = UILineBreakModeWordWrap;
+	messageLabel.numberOfLines = 2;
+	messageLabel.shadowColor = [UIColor whiteColor];
+	messageLabel.shadowOffset = CGSizeMake(0, 1);
+	messageLabel.backgroundColor = [UIColor clearColor];
+	[backgroundView addSubview:messageLabel];
+	
+	[[super view] addSubview:backgroundView];
 }
 
 @end
